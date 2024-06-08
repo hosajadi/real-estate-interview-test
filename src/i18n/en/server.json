@@ -1,0 +1,62 @@
+{
+    "STATUS": {
+        "code": "STATUS",
+        "message": "Server is online."
+    },
+    "favorite": {
+        "LIKE_HOUSE_SUCCESS": {
+            "code": "LIKE_HOUSE_SUCCESS",
+            "message": "The house is liked successfully."
+        },
+        "UNLIKE_HOUSE_SUCCESS": {
+            "code": "UNLIKE_HOUSE_SUCCESS",
+            "message": "The house is unliked successfully."
+        },
+        "FAVORITE_LIST_SUCCESS": {
+            "code": "FAVORITE_LIST_SUCCESS",
+            "message": "All favorite houses are retrieved successfully."
+        }
+    },
+    "user": {
+        "USER_REGISTER_SUCCESS": {
+            "code": "USER_REGISTER_SUCCESS",
+            "message": "The user registered successfully"
+        },
+        "LOGIN_SUCCESS": {
+            "code": "LOGIN_SUCCESS",
+            "message": "The user logged in successfully"
+        },
+        "USER_PROFILE_SUCCESS": {
+            "code": "USER_PROFILE_SUCCESS",
+            "message": "The user profile is retrieved successfully"
+        },
+        "USER_PROFILE_BY_ID_SUCCESS": {
+            "code": "USER_PROFILE_BY_ID_SUCCESS",
+            "message": "The user is retrieved successfully"
+        }
+    },
+    "booking": {
+        "GET_BOOKING_LIST_SUCCESS": {
+            "code": "GET_BOOKING_LIST_SUCCESS",
+            "message": "The booked houses are retrieved successfully"
+        },
+        "BOOK_HOUSE_SUCCESS": {
+            "code": "BOOK_HOUSE_SUCCESS",
+            "message": "The house is booked successfully"
+        }
+    },
+    "house": {
+        "HOUSE_CREATED_SUCCESS": {
+            "code": "HOUSE_CREATED_SUCCESS",
+            "message": "The house is created successfully"
+        },
+        "GET_HOUSE_BY_ID_SUCCESS": {
+            "code": "GET_HOUSE_BY_ID_SUCCESS",
+            "message": "The house is retrieved successfully"
+        },
+        "HOUSE_EXPLORE_SUCCESS": {
+            "code": "HOUSE_EXPLORE_SUCCESS",
+            "message": "The houses are explored successfully"
+        }
+    }
+}

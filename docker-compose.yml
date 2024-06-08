@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  api-server:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - ${PORT}:3000'
+    networks:
+      - test-network
+    depends_on:
+      - mongodb
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+    
+  mongodb:
+    image: mongodb/mongodb-community-server:6.0-ubi8
+    restart: always
+    ports:
+      - '27017:27017'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=pass
+    volumes:
+      - ./mongo/data/db:/data/db
+    networks:
+      - test-network
+    env_file:
+      - .env
+
+networks:
+  test-network:
+    name: test-network
+    external: true
