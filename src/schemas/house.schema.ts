@@ -1,12 +1,8 @@
-import { HydratedDocument, Types } from 'mongoose';
+import { HydratedDocument } from 'mongoose';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { IAddress } from 'src/core/interfaces';
-import { configService } from 'src/core/config.service';
 import {User} from "./user.schema";
 
 export type HouseDocument = HydratedDocument<House>;
-
-const BIO_PREFERENCES = configService.getBioPreferences();
 
 @Schema({ timestamps: true })
 export class House{

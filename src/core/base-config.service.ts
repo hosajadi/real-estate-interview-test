@@ -117,12 +117,7 @@ export class BaseConfig {
             ),
         };
     }
-    public getBioPreferences(): { min: number; max: number } {
-        return {
-            min: Number(this.getValue('BIO_MIN_LENGTH')),
-            max: Number(this.getValue('BIO_MAX_LENGTH')),
-        };
-    }
+
     public getMailgunConfig() {
         return {
             apiKey: this.getValue('MAILGUN_API_KEY'),

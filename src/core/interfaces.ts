@@ -36,9 +36,6 @@ export interface ICoordinates {
     lng: number;
 }
 
-export interface IAddress {
-    coordinates: number[];
-}
 export interface IReportMeta {
     total: number;
     page: number;
